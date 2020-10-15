@@ -1,0 +1,303 @@
+package figuras;
+
+import TrazoFiguras.Figuras;
+
+/**
+ *
+ * @author Angel
+ */
+public class Main {
+    public static void main(String[] args) {
+        new Casita();
+        new Red();
+        new Ovalos();
+        new Carita();
+        new Triangulos();
+  }
+}
+
+
+
+package figuras;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Graphics;
+import javax.swing.JPanel;
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+
+/**
+ *
+ * @author Angel
+ */
+public class Casita extends JPanel{
+    
+    // ventana
+    private JFrame ventana;
+    // contenedor
+    private Container contenedor;
+    
+    public Casita() {
+      
+        ventana = new JFrame("Dibujando icono");
+        // definir tamaño a ventana
+        ventana.setSize(800, 600);
+        ventana.setVisible(true);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setResizable(false);
+        
+        contenedor = ventana.getContentPane();
+        contenedor.setSize(800, 600);
+        // agregar la ventana en el contenedor
+        contenedor.add(this, BorderLayout.CENTER);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        
+        //trazo de rectangulos
+        g.setColor(Color.DARK_GRAY);
+        g.drawRect(250, 280, 300, 100);
+        g.drawRect(270, 310, 50, 70);
+        g.drawLine(250, 280, 400, 130);
+        g.drawLine(400, 130, 550, 280);
+        g.drawLine(270, 380, 230, 400);
+        g.drawLine(320, 380, 280, 400);
+       
+    }
+    
+   
+}
+
+
+
+
+package figuras;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Graphics;
+import javax.swing.JPanel;
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+
+/**
+ *
+ * @author Angel
+ */
+public class Red extends JPanel{
+    
+    // ventana
+    private JFrame ventana;
+    // contenedor
+    private Container contenedor;
+    
+    public Red() {
+      
+        ventana = new JFrame("Dibujando icono");
+        // definir tamaño a ventana
+        ventana.setSize(800, 600);
+        ventana.setVisible(true);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setResizable(false);
+        
+        contenedor = ventana.getContentPane();
+        contenedor.setSize(800, 600);
+        // agregar la ventana en el contenedor
+        contenedor.add(this, BorderLayout.CENTER);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        
+        //trazo de rectangulos
+        g.setColor(Color.DARK_GRAY);
+        g.drawRect(100, 400, 50, -100);
+        g.drawRect(170, 400, 50, -150);
+        g.drawRect(240, 400, 50, -200);
+        g.drawRect(310, 400, 50, -250);
+        g.drawRect(380, 400, 50, -300);
+      
+       
+    }
+    
+   
+}
+
+
+
+
+package figuras;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Graphics;
+import javax.swing.JPanel;
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+
+/**
+ *
+ * @author Angel
+ */
+public class Ovalos extends JPanel{
+    
+    // ventana
+    private JFrame ventana;
+    // contenedor
+    private Container contenedor;
+    
+    public Ovalos() {
+      
+        ventana = new JFrame("Dibujando icono");
+        // definir tamaño a ventana
+        ventana.setSize(800, 600);
+        ventana.setVisible(true);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setResizable(false);
+        
+        contenedor = ventana.getContentPane();
+        contenedor.setSize(800, 600);
+        // agregar la ventana en el contenedor
+        contenedor.add(this, BorderLayout.CENTER);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        
+        //trazo de rectangulos
+        g.setColor(Color.DARK_GRAY);
+        g.drawOval(350, 150, 50, 300);
+        g.drawOval(220, 270, 300, 100);
+        g.drawOval(280, 180, 180, 100);
+       
+    }
+    
+   
+}
+
+
+
+
+package figuras;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Graphics;
+import javax.swing.JPanel;
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+
+/**
+ *
+ * @author Angel
+ */
+public class Carita extends JPanel{
+    
+    // ventana
+    private JFrame ventana;
+    // contenedor
+    private Container contenedor;
+    
+    public Carita() {
+      
+        ventana = new JFrame("Dibujando icono");
+        // definir tamaño a ventana
+        ventana.setSize(800, 600);
+        ventana.setVisible(true);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setResizable(false);
+        
+        contenedor = ventana.getContentPane();
+        contenedor.setSize(800, 600);
+        // agregar la ventana en el contenedor
+        contenedor.add(this, BorderLayout.CENTER);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        
+        //trazo de rectangulos
+        g.setColor(Color.DARK_GRAY);
+        g.drawOval(200, 130, 350, 350);
+        g.drawOval(330, 320, 100, 100);
+        g.drawOval(260, 200, 60, 60);
+        g.drawOval(420, 200, 60, 60);
+        g.fillOval(285, 225, 10, 10);
+        g.fillOval(285, 225, 10, 10);
+        g.fillOval(445, 225, 10, 10);
+    }
+    
+   
+}
+
+
+
+
+package figuras;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Graphics;
+import javax.swing.JPanel;
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+
+/**
+ *
+ * @author Angel
+ */
+public class Triangulos extends JPanel{
+    
+    // ventana
+    private JFrame ventana;
+    // contenedor
+    private Container contenedor;
+    
+    public Triangulos() {
+      
+        ventana = new JFrame("Dibujando icono");
+        // definir tamaño a ventana
+        ventana.setSize(800, 600);
+        ventana.setVisible(true);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setResizable(false);
+        
+        contenedor = ventana.getContentPane();
+        contenedor.setSize(800, 600);
+        // agregar la ventana en el contenedor
+        contenedor.add(this, BorderLayout.CENTER);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        
+        //trazo de rectangulos
+        g.setColor(Color.DARK_GRAY);
+        g.drawLine(100, 200, 100, 50);
+        g.drawLine(100, 200, 200, 200);
+        g.drawLine(100, 50, 200, 200);
+        
+        g.drawLine(100, 350, 500, 350);
+        g.drawLine(100, 350, 350, 200);
+        g.drawLine(350, 200, 500, 350);
+        
+        g.drawLine(350, 200, 500,200);
+        g.drawLine(350, 120, 350, 200);
+        g.drawLine(350, 120, 500, 200);
+        
+    }
+    
+   
+}
